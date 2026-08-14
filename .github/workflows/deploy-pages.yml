@@ -16,6 +16,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'Azi-co/Azi-co.github.io'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,6 +43,7 @@ jobs:
           path: ./out
 
   deploy:
+    if: github.repository == 'Azi-co/Azi-co.github.io'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
