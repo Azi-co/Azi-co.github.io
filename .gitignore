@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.playwright-cli/
+output/
+skill-observations/
+tmp/
+.env*
+!.env.example
